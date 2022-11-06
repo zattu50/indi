@@ -1,0 +1,527 @@
+footer{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  width: 70vw;
+  height: 144px;
+  border-top: 4px solid #000000;
+  margin: 2rem auto;
+}
+
+footer a{
+  font-size: 1.75vw;
+  color: #0645AD;
+
+}
+
+
+#lineFooter{
+  display: block;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  width: 70%;
+  height: auto;
+  margin-top: 1rem;
+}
+
+footer .img1{
+  display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 35px;
+width: 17vw;
+height: 64px;
+}
+
+footer p{
+gap: 5px;
+width: auto;
+height: 20px;
+font-size: 1.9vw;
+}
+
+footer img{
+  max-width: clamp(50px,8vw,120px);
+max-height: 100%;
+border-radius: 15%;
+margin-top: 2rem;
+}
+
+#cover {
+  background: url("./Images/Logo.png") no-repeat scroll center center #FFF;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 100000;
+  background-color: white;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+.preloader img {
+  animation: spin 4s infinite ease-in-out;
+  transition: all;
+  width: 150px;
+  margin: 0 auto;
+}
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  25% {
+    transform: rotateY(180deg);
+  }
+  50% {
+    transform: rotateY(360deg);
+  }
+  75% {
+    transform: rotateY(540deg);
+  }
+  100% {
+    transform: rotateY(720deg);
+  }
+}
+
+
+
+
+:root{
+  --fs-h1: clamp(14px ,3vw, 1.7rem);
+  --fs-h2: clamp(8px ,2.25vw, 1em);
+  --fs-p: clamp(8px, 2vw, 1.15rem);
+ 
+}
+
+
+
+.head{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+margin-bottom: 5em;
+font-size: var(--fs-h1) ;
+}
+
+
+.show{
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  
+}
+
+.designProces{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--fs-h1);
+  height: auto;
+  background-color: #FFF;
+  border-radius: 20px;
+  width: 65vw;
+  height: fit-content;
+  margin: 0 auto;
+  font-family: myFirstFont;
+  src: url(https://rightfontapp.com/family/kaisei+decol);
+  font-weight: 100;
+}
+.designProces img{
+  width: 60vw;
+  height: auto;
+  grid-column:span 12;
+  margin-top: -5rem;
+}
+
+
+
+.designProcess{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 100px;
+  gap: 15px;
+  font-size: var(--fs-h1);
+  height: auto;
+  background-color: #FFF;
+  border-radius: 20px;
+  margin: 2rem auto;
+
+  font-family: myFirstFont;
+  src: url(https://rightfontapp.com/family/kaisei+decol);
+  font-weight: 100;
+  
+}
+.designProcess img{
+  width: 60vw;
+  height: auto;
+  grid-column:span 12;
+
+}
+
+.designProcess h2{
+  line-height: 1.6;
+  font-weight: 300;
+
+}
+
+.designProcess h1{
+  line-height: 1.6;
+  font-weight: 500;
+  word-spacing: 30px;
+  color: #6E6E6E;
+}
+
+.left p{
+  font-size: clamp(1.5rem, 3vw, 1.5rem);
+  line-height: 1.6;
+
+}
+
+.comp{
+  width: 60vw;
+  margin: 0 auto;
+}
+.comp h1{
+  font-size: 2rem;
+  color: #ED7D31;
+}
+
+.comp h2{
+  font-size: 1.5rem;
+  color: white;
+}
+
+.designImg{
+  background-image: url(./Images/design\ process.svg);
+}
+
+.value{
+  font-size: var(--fs-p);
+}
+#grid-parent {
+  border: var(--ln);
+  width: 70vw;
+  min-height: 660px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 0 auto;
+}
+
+
+
+.left{
+  grid-column: span 7;
+    display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  font-size: 2rem;
+  height: fit-content;
+}
+.right {
+  grid-column: span 4;
+    display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  font-size: var(--fs-p);
+}
+
+
+
+
+
+@media screen and (max-width: 1600px) {
+  #grid-parent > .left, #grid-parent > .right {
+    grid-column: span 6;
+    padding-bottom: 5rem;
+    
+  }
+  
+.left{
+  grid-column: span 6 ;
+  margin-right: 2rem;
+  padding: 28px;
+}
+
+  #grid-parent > .left {
+    padding-right: 2rem !important;
+  }
+}
+@media screen and (max-width: 960px) {
+  #grid-parent > .left, #grid-parent > .right {
+    grid-column: span 12;
+    padding-bottom: 5rem;
+    
+  }
+  .designProcess{
+    padding: 8px;
+  }
+
+  #grid-parent > .left {
+    padding-right: 0 !important;
+  }
+}
+
+#grid-parent > .left {
+  border-right: var(--ln);
+  padding-right: 5rem;
+}
+
+#grid-parent > .right > .item {
+    border: var(--ln);
+  display: flex;
+}
+
+@media screen and (max-width: 460px) {
+  #grid-parent > .right > .item {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+  }
+.designProcess{
+  padding: 16px;
+
+}
+}
+
+#grid-parent > .right > .item > .key {
+  min-width: 144px;
+}
+
+h2{
+  font-size: 2rem;
+  line-height: 1.6;
+
+}
+
+.background{
+  background-color: #023047;
+  padding: 2rem;
+}
+
+
+
+#content {
+  border: var(--ln);
+  width: 70vw;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  padding: 0px;
+  background-color: #FFF;
+  border-radius: 20px;
+  margin: 2rem auto;
+}
+
+.persona div{
+  margin: 2rem auto;
+  width: 80vw;
+}
+.persona img{
+  width: 80vw;
+}
+
+.text{
+  grid-column: span 6;
+    display: flex;
+    align-items: center;
+  flex-direction: column;
+  gap: 6rem;
+  font-size: var(--fs-p);
+  height: fit-content;
+  padding: 5rem;
+  font-family: myFirstFont;
+  src: url(https://rightfontapp.com/family/kaisei+decol);
+}
+
+  .hifi{
+    color: #ED7D31;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 70vw;
+    font-size: clamp(1.2rem,7vw,5rem);
+    font-weight: bolder;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hifi img{
+    width: 55vw;
+  }
+
+
+.text p{
+  line-height: 2;
+  font-size: var(--fs-p);
+
+}
+.text h2{
+  font-weight: 300;
+  font-size: clamp(1rem,3vw,1.75rem);
+  font-family: myFirstFont;
+  src: url(https://rightfontapp.com/family/kaisei+decol);
+  margin-left: 3rem;
+  
+}
+
+.text h1{
+
+  font-size: clamp(1.25rem,3.5vw,2rem);
+  font-family: myFirstFont;
+  src: url(https://rightfontapp.com/family/kaisei+decol);
+}
+.image {
+  grid-column: span 6;
+    display: flex;
+  flex-direction: row;
+  padding-top: 2REM;
+  gap: 2.5rem;
+  font-size: var(--fs-p);
+  margin: 0 1REM;
+  padding: 2rem;
+}
+
+
+.inspi{
+  background-image: url(./Images/inspiration.png);
+  display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+margin: 2rem auto;
+width: 85vw;
+}
+
+.line{
+  width: 70vw;
+  margin: 0 auto;
+  border: clamp(2px,2vw,0.5rem) solid white;
+  border-radius: 20px;
+  display: flex;
+}
+
+
+@media screen and (max-width: 1600px) {
+  #content > .text, #content > .image {
+    grid-column: span 6;
+    
+  }
+  #content{
+    width: 85vw;
+  }
+.text{
+  grid-column: span 6 ;
+  margin-right: 2rem;
+  padding: 28px;
+}
+
+  #content > .text {
+    padding-right: 2rem !important;
+  }
+}
+@media screen and (max-width: 960px) {
+  #content > .text, #content > .image {
+    grid-column: span 12;
+    padding-bottom: 1rem;
+    
+  }
+
+  .inspi{
+    width: 90vw;
+    margin: 2rem auto;
+  }
+ 
+.text{
+  grid-column: span 12;
+}
+  #content > .text {
+    padding-right: 0 !important;
+  }
+}
+
+#content > .text {
+  border-right: var(--ln);
+  padding-right: 5rem;
+}
+
+#content > .image > .item {
+    border: var(--ln);
+  display: flex;
+}
+
+@media screen and (max-width: 460px) {
+  #content > .image > .item {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+  }
+
+}
+
+.problem{
+  flex-direction: column;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  width: 60vw;
+  margin: 0 auto;
+  font-family: myFirstFont;
+  src: url(https://rightfontapp.com/family/kaisei+decol);
+  font-size: var(--fs-h1);
+  color: #FFF;
+}
+
+.problem {
+  font-weight: 300;
+  height: auto;
+}
+
+.steps{
+  display: flex;
+  flex-direction: column;
+
+}
+.steps p{
+  font-family: myFirstFont;
+  src: url(https://rightfontapp.com/family/kaisei+decol);
+  font-size: var(--fs-p);
+}
+
+.steps h2{
+  font-family: myFirstFont;
+  src: url(https://rightfontapp.com/family/kaisei+decol);
+}
+
+.text1{
+  padding: 3rem;
+  line-height: 3;
+  font-family: myFirstFont;
+  src: url(https://rightfontapp.com/family/kaisei+decol);
+  font-size: 2rem;
+}
+
+#minus-top{
+  margin-top: -3rem;
+}
+
+.links{
+  display: flex;
+
+  flex-direction: row;
+  gap: 30vw;
+  padding-top: -5rem;
+}
