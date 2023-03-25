@@ -1,105 +1,31 @@
-<link rel="stylesheet"  href="./index.css">
-<meta charset = 'utf-8'>
-    <title> UX/UI Portfolio | Adam Samia </title>
-    <link rel="stylesheet" href="css/index.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- This stylesheet is an example of how you can add your own stylesheet to customize bootstrap components. Notice how it is loaded 2nd to the required bootstrap stylesheet. This is so our stylesheet will overwrite bootstrap classes when we apply the same class but different styles to the stylsheet -->
-    <link rel="stylesheet" href="css/index.css">
-    <script src="./index.js"></script>
-<body class="layout"> 
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>CodePen - A Pen by zattu50</title>
+  <link rel="stylesheet" href="./style.css">
 
-  <!DOCTYPE html>
-  <html>
-  <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-  body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .topnav {
-    overflow: hidden;
-    background-color: rgb(255, 255, 255);
-   
-  }
-  
-  .topnav {
-    overflow: hidden;
-    background-color: rgb(255, 255, 255);
-    padding-left: 10%;
-  }
-  
-  .topnav a {
-    float: left;
-    display: block;
-    color: #000000;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .topnav a.active {
-    background-color: #4e4e4e;
-    color: white;
-  }
-  
-  .topnav .icon {
-    display: none;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-  }
-  </style>
-  </head>
-  <body>
-  
-    <div class="topnav" id="myTopnav">
-      <a href="https://zattu50.github.io/Homepage/">Home</a>
-      <a href="https://zattu50.github.io/About-me/">About me</a>
-      <a href="https://zattu50.github.io/Projects/">Projects</a>
-      <a href="#about">huss.s96@hotmail.com</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav>
+  <div class="navbar-container">
+    <div class="navbar-logo">
+      <a href="#">Logo</a>
     </div>
-  
-  <script>
-  function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
-  </script>
+    <ul class="navbar-links">
+      <li><a href="https://zattu50.github.io/Homepage/">Home</a></li>
+      <li><a href="https://zattu50.github.io/About-me/">About</a></li>
+      <li> <a href="mailto:example@example.com">huss.s96@hotmail.com</a></li>
+    </ul>
+    <div class="menu-icon">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+  </div>
+</nav>
    <div class="head">
       <H1>Department of Education, Skills and Employment </H1>
       <h2>Redesign</h2>
@@ -151,7 +77,7 @@
         </h2>
       </div>
       <div class="image">
-          <div class="key"><img class="show" src="./Images/indi overview.png" alt=""></div>
+          <div class="key"><img class="show1" src="./Images/indi overview.png" alt=""></div>
         </div>
   </section>
 
@@ -189,7 +115,7 @@
               <h2>This simple user flow on the original webpage created a sense of user confusion about the journey because of the path. Specifically,  it had confusing headlines and did not have a clear indication of the pages information holding. </h2>
             </div>
             <div class="image">
-                <div class="key"><img class="show" src="./Images/user flow.png" alt=""></div>
+                <div class="key"><img class="show1" src="./Images/user flow.png" alt=""></div>
               </div>
         </section>
 
@@ -216,7 +142,7 @@
           </h2>
         </div>
           <div class="image">
-              <div class="key"><img class="show" src="./Images/sitemap.png" alt=""></div>
+              <div class="key"><img class="show1" src="./Images/sitemap.png" alt=""></div>
             </div>
       </section>
 
@@ -224,7 +150,7 @@
 
       <section style="background-color: #023047;" id="content">
         <div class="image">
-            <div class="key"><img class="show" src="./Images/moodboard.png" alt=""></div>
+            <div class="key"><img class="show1" src="./Images/moodboard.png" alt=""></div>
           </div> 
           <div style="gap: 0 ;" class="text">
           <h1 style="color: #ED7D31; ;">MoodBoard</h1>
@@ -241,7 +167,7 @@
          <h2 style="color: white ;">We kept the style similar to the original and changed the typography slighly with modern looking icons.</h2>
     </div>
       <div class="image">
-          <div class="key"><img class="show" src="./Images/style guide.png" alt=""></div>
+          <div class="key"><img class="show1" src="./Images/style guide.png" alt=""></div>
         </div>
   </section>
   
@@ -251,7 +177,7 @@
       <h2>In our first iteration of the low fidelity wireframe, we changed the layout of the “Homepage” and the “Partner with us” page.</h2>
     </div>
     <div class="image">
-        <div class="key"><img class="show" src="./Images/proto early stages.png" alt=""></div>
+        <div class="key"><img class="show1" src="./Images/proto early stages.png" alt=""></div>
       </div>
 </section>
 
@@ -266,7 +192,7 @@ margin: 0 auto;" id="content">
     <h2>Next, we moved onto Mid fidelity wirframing.</h2>
   </div>
   <div class="image">
-      <div class="key"><img class="show" src="./Images/prototype stages.png" alt=""></div>
+      <div class="key"><img class="show1" src="./Images/prototype stages.png" alt=""></div>
     </div>
 </section>
 
@@ -290,19 +216,24 @@ alt="">
 
 </section>
 <footer>
-  <div id="lineFooter"> 
-    <p>Want to Contact me:</p>
-    <a href="mailto:huss.s96@hotmail.com?subject=You've%20Got%20Mail!" class="paragraph-tiny">huss.s96@hotmail.com</a>
-</div>
-
-  
-<a href="https://www.linkedin.com/in/adam-samia-915666243/" target="_blank" rel="noopener noreferrer"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="lindin">
-</a>
+  <div class="footer-left">
+    <a href="mailto:example@example.com">huss.s96@hotmail.com</a>
+  </div>
+  <div class="footer-right">
+    <a href="https://www.linkedin.com/in/adamsamia/"><p>Linkedin</p></a>
+    
+  </div>
 </footer>
-
-<div class="preloader">
-<img src="./Images/Logo.png">
+<div class="side-menu">
+  <button class="close-btn">X</button>
+   <ul>
+    <li><a href="https://zattu50.github.io/Homepage/">Home</a></li>
+    <li><a href="https://zattu50.github.io/About-me/">About</a></li>
+    <li><a href="mailto:example@example.com">huss.s96@hotmail.com</a></li>
+  </ul>
 </div>
-
+<!-- partial -->
+  <script  src="./script.js"></script>
 
 </body>
+</html>
